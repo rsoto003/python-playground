@@ -1,3 +1,4 @@
+#simple program that is for a try_it_yourself exercise on page 25.
 author = 'kobe bryant'
 team = 'Los Angeles Lakers'
 position = 'Shooting Guard'
