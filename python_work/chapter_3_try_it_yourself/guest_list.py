@@ -1,6 +1,6 @@
 # try it yourself exercise on page 41
 guest_list = ['kobe bryant', 'nipsey hussle', 'lebron james', 'shohei ohtani', 'caleb williams', 'denzel washington']
-guest_who_cannot_attend = guest_list.index('caleb williams')
+guest_who_cannot_attend_index = guest_list.index('caleb williams')
 guest_to_replace_aforementioned_guest = 'reggie bush'
 
 for guest in guest_list:
@@ -9,10 +9,10 @@ for guest in guest_list:
 # initial guest list
 print(guest_list)
 
-print(f"Unfortunately, {guest_list[guest_who_cannot_attend].title()} is no longer able to attend.\n{guest_to_replace_aforementioned_guest.title()} will be replacing that guest.")
+print(f"Unfortunately, {guest_list[guest_who_cannot_attend_index].title()} is no longer able to attend.\n{guest_to_replace_aforementioned_guest.title()} will be replacing that guest.")
 
-guest_list.pop(guest_who_cannot_attend)
-guest_list.insert(guest_who_cannot_attend, guest_to_replace_aforementioned_guest)
+guest_list.pop(guest_who_cannot_attend_index)
+guest_list.insert(guest_who_cannot_attend_index, guest_to_replace_aforementioned_guest)
 
 print(guest_list)
 
