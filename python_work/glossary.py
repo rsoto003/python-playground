@@ -73,9 +73,69 @@ print(del_list)
 '''
     .pop() - the pop method removes the last item in a list.
     * the catch here is you are still able to work with that item after removing it
+    * additionally, if you want to remove a specific index, pass that index in.
 '''
 pop_list = ['1', '2', '3']
 popped = pop_list.pop()
 
 print(pop_list)
 print(popped)
+
+#########################################################################################################################################
+
+'''
+    .remove() will delete an item by specifying the value. helpful when the index is unknown.
+    * this method only deletes the first occurrence of the value that is specified.
+'''
+
+remove_list = ['1', '2', 'september', '3']
+
+remove_list.remove('september')
+print(remove_list)
+
+#########################################################################################################################################
+
+'''
+    .sort() - sorts a listalphabetically
+    * important to note - .sort() changes the order of the list permanently. you can never revert to the previous order.
+    * can pass in "reverse=True to sort reverse-alphabetical order
+'''
+
+sort_list = ['jan', 'feb', 'mar', 'apr', 'may', 'jun']
+
+sort_list.sort()
+print(sort_list)
+
+sort_list.sort(reverse=True)
+print(sort_list)
+
+#########################################################################################################################################
+
+'''
+    sorted() function sorts a list alphabetically temporarily.
+    * this is helpful when the original order of a list needs to be maintained.
+'''
+sorted_list = ['bmw', 'audi', 'toyota', 'suburu']
+
+print(sorted_list)
+print(sorted(sorted_list))
+print(sorted_list)
+
+#########################################################################################################################################
+
+'''
+    .reverse() does not sort alphabetically backwards, just reverses order of the list.
+'''
+reverse_list = ['bmw', 'audi', 'toyota', 'suburu']
+
+print(reverse_list)
+reverse_list.reverse()
+print(reverse_list)
+
+#########################################################################################################################################
+
+'''
+    len() - length of a list
+'''
+
+print(len(reverse_list))
