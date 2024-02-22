@@ -188,3 +188,11 @@ players = ['ryan', 'kobe', 'mookie', 'freddie', 'shaq']
 print(players[0:4])
 print(players[:2])
 print(players[3:])
+
+############################################################################################################################
+'''
+    TUPLES:
+        immutable: value that cannot change.
+        immutable list = list of values that cannot change, aka tuple
+        same syntax as lists, but instead of brackets, use paranthesis
+'''
