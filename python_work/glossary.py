@@ -177,3 +177,14 @@ print(even_numbers)
 '''
 squares_v2 = [value**2 for value in range(1, 11)]
 print(squares_v2)
+
+############################################################################################################################
+
+'''
+    SLICING A LIST:
+        same idea as the range() function syntax.
+'''
+players = ['ryan', 'kobe', 'mookie', 'freddie', 'shaq']
+print(players[0:4])
+print(players[:2])
+print(players[3:])
