@@ -152,8 +152,28 @@ for value in range(1,10):
     print(value)
 
 ############################################################################################################################
+    
 '''
     list() - converts a set of numbers into a list.
 '''
 even_numbers = list(range(2, 11, 2))
 print(even_numbers)
+
+############################################################################################################################
+
+'''
+    min()
+    max()
+    sum()
+
+    do exactly as you'd think they'd do.
+'''
+
+############################################################################################################################
+
+'''
+    list comprehensions:
+        combines the for loop and the creation of new elements into one line, and automatically appends each new element.
+'''
+squares_v2 = [value**2 for value in range(1, 11)]
+print(squares_v2)
