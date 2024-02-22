@@ -139,3 +139,21 @@ print(reverse_list)
 '''
 
 print(len(reverse_list))
+
+#########################################################################################################################################
+
+'''
+    range() - generates a series of numbers between a range.
+    first two arguments are simply the range in which you wish your numbers to be between.
+    the third argument is the step size in which numbers are generated.
+'''
+
+for value in range(1,10):
+    print(value)
+
+############################################################################################################################
+'''
+    list() - converts a set of numbers into a list.
+'''
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
