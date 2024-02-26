@@ -13,16 +13,17 @@
 delivery_order_queue = []
 submitted_orders = [
     ['medium', 'pepperoni', 'cheese', 'tomato sauce', 'regular'],
+    ['calzone', 'sausage', 'urgent', 'peppers'],
     ['large', 'pepperoni', 'sausage', 'cheese', 'tomato sauce', 'regular'],
     ['small', 'veggie', 'urgent']
 ]
 
 def order_queue(submitted_orders_list, delivery_order_list):
     for order in submitted_orders_list:
-        if 'urgent' not in order:
-            delivery_order_list.append(order)
-        else:
+        if 'urgent' in order:
             delivery_order_list.insert(0, order)
+        else:
+            delivery_order_list.append(order)
 
     print('delivery orders finalizing...\n')
     for delivery_order in delivery_order_list:
