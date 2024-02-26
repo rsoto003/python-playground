@@ -18,25 +18,19 @@ submitted_orders = [
 ]
 
 def order_queue(submitted_orders_list, delivery_order_list):
-    print('order_queue init:')
-    for submitted_orders in submitted_orders_list:
-        print(f"{submitted_orders}\n")
-
     for order in submitted_orders_list:
-        for order_trait in order:
-            if order_trait == 'urgent':
-                delivery_order_list.insert(0, order)
-            else:
-                delivery_order_list.append(order)
+        if 'urgent' not in order:
+            delivery_order_list.append(order)
+        else:
+            delivery_order_list.insert(0, order)
 
     print('delivery orders finalizing...\n')
     for delivery_order in delivery_order_list:
-        print(f"{delivery_order} ---")
+        print(f"{delivery_order}")
 
 
 
 order_queue(submitted_orders, delivery_order_queue)
 
-print(delivery_order_queue)
 
 
