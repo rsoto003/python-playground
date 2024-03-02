@@ -1,7 +1,7 @@
 alien_0 = { 'color': 'green', 'points': 5}
 
 alien_1 = { 'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-
+alien_1['speed'] = 'fast'
 # move alien to the right
 # determine HOW FAR by the alien's current speed
 
