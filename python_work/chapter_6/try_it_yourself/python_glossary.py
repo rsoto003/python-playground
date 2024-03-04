@@ -10,4 +10,12 @@ def display_glossary(glossary):
     for item in glossary:
         print(f"{item}: {glossary[item]}")
 
-display_glossary(python_glossary)
+display_glossary(python_glossary) 
+
+
+# additional way to loop through dictionary:
+def diff_loop(list):
+    for key, value in list.items():
+        print(f"\n{key} does this:\n\t --> {value}")
+
+diff_loop(python_glossary)
