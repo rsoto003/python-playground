@@ -49,7 +49,7 @@ print(append_list)
 #########################################################################################################################################
 
 '''
-    .insert() - adds a new elemnt at any position in a list.
+    .insert() - adds a new element at any position in a list.
     this must be done by specifying which position in the list via the index
 '''
 insert_list = ['one', 'three']
